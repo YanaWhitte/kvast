@@ -1,0 +1,630 @@
+body,
+p,
+h1,
+h2,
+h3,
+cite,
+li {
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.header {
+    width: 100%;
+    height: 550px;
+    color: white;
+    font-weight: bold;
+    background: url("img/wheat-back.jpg");
+    background-size: cover;
+}
+
+.flex-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo-and-nav {
+    margin-top: 60px;
+    justify-content: space-between;
+}
+
+.main-nav {
+    text-transform: uppercase;
+}
+
+.main-nav a {
+    padding: 21px 27px 18px 27px;
+    color: white;
+    line-height: 18px;
+    text-decoration: none;
+    display: block;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.main-nav a:first-child {
+    padding-left: 0;
+}
+
+.main-nav a:last-child {
+    padding-right: 0;
+}
+
+.main-nav a:hover {
+    color: #ffcb78;
+    border-bottom: 1px solid white;
+}
+
+.main-nav a:active {
+    color: rgba(255, 203, 120, 0.3);
+    border-bottom: 1px solid white;
+}
+
+.promo {
+    margin-top: 120px;
+    font-size: 70px;
+    line-height: 70px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 40px;
+    line-height: 60px;
+    text-transform: uppercase;
+}
+
+.bottles {
+    padding-bottom: 110px;
+}
+
+.bottles h2 {
+    margin-top: 80px;
+}
+
+.bottles h3 {
+    margin-left: -1px;
+}
+
+.new-items {
+    margin-top: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.item-column {
+    width: 399px;
+    padding-left: 34px;
+    padding-right: 25px;
+    border-right: 1px solid #e5e5e5;
+}
+
+.item-column:first-child {
+    border-left: 1px solid rgba(0, 0, 0, 0.1)
+}
+
+.item-conteiner {
+    margin-top: 25px;
+    position: relative;
+}
+
+.item-conteiner img {
+    padding-top: 4px;
+    padding-left: 8px;
+}
+
+.item-description-table {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;
+}
+
+.table-block {
+    /* width: 150px; */
+    height: 82px;
+}
+
+.table-block table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+}
+
+.table-block td {
+    padding-left: 10px;
+    border: 1px solid #e5e5e5;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.item-description-table p {
+    margin-top: 11px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #404040;
+}
+
+p.item-description {
+    font-size: 16px;
+    line-height: 30px;
+    color: #404040;
+}
+
+.item-buttons {
+    margin-top: 61px;
+    line-height: 16px;
+}
+
+.btn {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn.more-details {
+    color: #834700;
+    border: 2px solid #834700;
+}
+
+.btn.more-details:hover {
+    color: #6a3900;
+    border-color: #6a3900;
+}
+
+.btn.more-details:active {
+    color: #6a3900;
+    border-color: #6b3b02;
+    opacity: 0.3;
+}
+
+.btn.purchase {
+    padding: 15px 22px;
+    margin-left: 6px;
+    color: white;
+    background-color: #834700;
+}
+
+.btn.purchase:hover {
+    background-color: #6a3900;
+}
+
+.btn.purchase:active {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.price {
+    margin-top: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 16px 0;
+    padding-left: 25px;
+}
+
+.big-container {
+    width: 1020px;
+}
+
+.advantage {
+    text-align: left;
+    padding: 80px 0 90px;
+    background-color: #ffcb78;
+}
+
+.advantage-column {
+    width: 255px;
+    padding: 100px 90px 0;
+    border-left: 1px solid #e5b66c;
+}
+
+.advantage-column:first-child {
+    border-left: none;
+}
+
+.advantage-column h3 {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.advantage-column p {
+    padding-top: 19px;
+    color: #404040;
+}
+
+.advantage-column.advantage-thumbsup {
+    margin-left: 5px;
+}
+
+.advantage-brew {
+    padding-left: 0;
+    background: url("img/icon-brew.png") no-repeat top left;
+}
+
+.advantage-matreshka {
+    background: url("img/icon-matreshka.png") no-repeat 90px 0;
+}
+
+.advantage-thumbsup {
+    padding-right: 0;
+    background: url("img/icon-thumbsup.png") no-repeat 90px 0;
+}
+
+.kvast-reference {
+    padding: 80px 0 78px;
+}
+
+.kvast-reference .row {
+    margin-top: 59px;
+}
+
+.kvast-reference .column-2 {
+    margin-top: 4px;
+    margin-left: 118px;
+}
+
+.reference-title {
+    margin-bottom: 21px;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.reference-description {
+    width: 482px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #404040;
+}
+
+.reference-source {
+    margin-bottom: 36px;
+    margin-left: 3px;
+    color: #404040;
+    font-style: italic;
+    line-height: 21px;
+}
+
+.reference-source a {
+    color: #834700;
+}
+
+.reference-source a:hover {
+    color: #6a3900;
+}
+
+.reference-source a:active {
+    color: #cab7a2;
+}
+
+.press-review {
+    padding: 80px 0 90px;
+    background-color: #ede5d8;
+}
+
+.press-review p {
+    width: 699px;
+    margin-top: 75px;
+    color: #404040;
+    letter-spacing: 0.1px;
+}
+
+.press-review .relative {
+    position: relative;
+}
+
+.quotes-review {
+    position: absolute;
+    width: 41px;
+    height: 31px;
+    top: 7px;
+    left: -105px;
+}
+
+.press-review .row {
+    margin-top: 34px;
+    align-content: center;
+}
+
+.btn.read-more {
+    padding: 13px 20px 14px;
+    color: black;
+    line-height: 20px;
+    border: 2px solid black;
+    opacity: 0.3;
+}
+
+.btn.read-more:hover {
+    color: white;
+    border-color: #a5a097;
+    background-color: #a5a097;
+    opacity: 1;
+}
+
+.btn.read-more:active {
+    color: rgba(255, 255, 255, 0.3);
+    border-color: #8f8a81;
+    background-color: #8f8a81;
+    opacity: 1;
+}
+
+.press-review cite {
+    margin-top: 11px;
+    margin-left: 303px;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.range-table {
+    padding: 91px 0 90px;
+}
+
+.range {
+    margin-top: 75px;
+    width: 100%;
+    text-transform: uppercase;
+    border-collapse: collapse;
+}
+
+.range th {
+    font-size: 11px;
+    font-weight: normal;
+    text-align: left;
+    color: #999999;
+}
+
+.range tr {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.range .range-name {
+    width: 402px;
+    font-weight: bold;
+}
+
+.range .alc {
+    width: 91px;
+}
+
+.range .kcal {
+    width: 59px;
+}
+
+.range .volume {
+    width: 113px;
+}
+
+.range .cell-right {
+    text-align: right;
+}
+
+.range th {
+    padding-bottom: 31px;
+}
+
+.range td {
+    padding: 16px 0 18px;
+}
+
+.range sup {
+    margin-left: 21px;
+    padding: 2px 5px;
+    font-size: 8px;
+    color: white;
+    background-color: black;
+    border-radius: 3px;
+}
+
+.to-order {
+    padding: 80px 0 108px;
+    background-color: #ffcb78;
+}
+
+.to-order .order-tip {
+    width: 646px;
+    margin-top: 73px;
+    color: #404040;
+    letter-spacing: 0.05pt;
+}
+
+.to-order .order-form {
+    width: 630px;
+    margin-top: 71px;
+}
+
+.order-form-group {
+    margin-bottom: 24px;
+    position: relative;
+}
+
+.order-form-group label {
+    position: absolute;
+    top: 0;
+}
+
+.order-form .row {
+    justify-content: space-between;
+}
+
+.order-form input[type="text"],
+.order-form select,
+.order-form textarea {
+    margin-top: 30px;
+    /* width: 630px; */
+    box-sizing: border-box;
+    padding: 9px 15px;
+    width: 100%;
+    height: 50px;
+    font: inherit;
+    color: inherit;
+    border: none;
+    background-color: #e5b66c;
+}
+
+.order-form-group .for-textarea {
+    top: -30px;
+}
+
+.order-form-group .for-textarea+textarea {
+    margin-top: 60px;
+}
+
+.order-form input[type="text"]:hover,
+.order-form select:hover,
+.order-form textarea:hover {
+    background-color: #d9ad66;
+}
+
+.order-form input[type="text"]:focus,
+.order-form select:focus,
+.order-form textarea:focus {
+    background-color: white;
+}
+
+.to-order label {
+    margin-bottom: 11px;
+    font-weight: bold;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.row input[type="text"] {
+    width: 290px;
+}
+
+.order-form textarea {
+    display: block;
+    min-height: 120px;
+}
+
+.checkbox-area {
+    margin: 39px 0;
+}
+
+.btn.submit {
+    padding: 15px 20px;
+    color: white;
+    font-size: 16px;
+    background-color: #834700;
+    border-color: #834700;
+}
+
+.footer {
+    padding: 60px 43px;
+    background-color: black;
+}
+
+.footer .logo-and-nav {
+    margin-top: -4px;
+}
+
+.footer .logo-and-nav img {
+    margin-top: 2px;
+    margin-left: 40px;
+}
+
+.footer .main-nav {
+    margin-top: -2px;
+    margin-right: 110px;
+    font-weight: bold;
+}
+
+.footer-bottom {
+    margin-top: 47px;
+}
+
+.footer-bottom,
+.footer-bottom a {
+    font-size: 14px;
+    line-height: 20px;
+    color: #989898;
+}
+
+.footer-social,
+.footer-social a {
+    font-size: 0;
+}
+
+.social-btn {
+    display: inline-block;
+    width: 70px;
+    height: 66px;
+    vertical-align: middle;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.social-btn:active {
+    opacity: 0.5;
+}
+
+.social-btn.inst {
+    background: #1b1b1b url("img/icon-insta.png") no-repeat 50%;
+}
+
+.social-btn.fb {
+    border-left: none;
+    border-right: none;
+    background: #1b1b1b url("img/icon-fb.png") no-repeat 50%;
+}
+
+.social-btn.vk {
+    background: #1b1b1b url("img/icon-vk.png") no-repeat 50%;
+}
+
+.social-btn.html {
+    font-size: 0;
+    background: #1b1b1b url("img/htmlacademy.png") no-repeat 50%;
+}
+
+.footer-bottom a {
+    text-decoration: none;
+}
+
+.footer-copyright {
+    flex: 1;
+}
+
+.footer-copyright p {
+    width: 196px;
+    margin-left: 94px;
+    margin-top: 12px;
+    letter-spacing: 0.1px;
+}
+
+.developer-and-logo {
+    margin-right: 13px;
+    padding-top: 3px;
+}
+
+.developer-and-logo b {
+    margin-left: 26px;
+}
+
+.developer-and-logo .developer {
+    font-weight: bold;
+}
