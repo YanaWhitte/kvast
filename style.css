@@ -203,6 +203,9 @@ p.item-description {
 }
 
 .btn.purchase {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     padding: 15px 22px;
     margin-left: 6px;
     color: white;
@@ -472,7 +475,6 @@ p.item-description {
 }
 
 .order-form input[type="text"],
-.order-form select,
 .order-form textarea {
     margin-top: 30px;
     /* width: 630px; */
@@ -480,10 +482,17 @@ p.item-description {
     padding: 9px 15px;
     width: 100%;
     height: 50px;
-    font: inherit;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
     color: inherit;
     border: none;
     background-color: #e5b66c;
+}
+
+.order-form input[type="text"]:focus,
+.order-form textarea:focus {
+    outline: none;
 }
 
 .order-form-group .for-textarea {
@@ -506,6 +515,34 @@ p.item-description {
     background-color: white;
 }
 
+.order-form .select-label {
+    position: inherit;
+}
+
+.order-form .select {
+    cursor: pointer;
+    margin-top: 3px;
+    padding: 12px 12px 11px 25px;
+    align-items: center;
+    background-color: #e5b66c;
+}
+
+.order-form .select input {
+    display: none;
+}
+
+.order-form .select .placeholder {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.order-form .select .check-icon {
+    width: 19px;
+    height: 10px;
+    background: url("img/dropdown-icon.png");
+}
+
 .to-order label {
     margin-bottom: 11px;
     font-weight: bold;
@@ -513,25 +550,52 @@ p.item-description {
     text-transform: uppercase;
 }
 
-.row input[type="text"] {
+.to-order .row input[type="text"] {
     width: 290px;
 }
 
-.order-form textarea {
+.to-order textarea {
     display: block;
     min-height: 120px;
 }
 
-.checkbox-area {
+.to-order .checkbox-area {
     margin: 39px 0;
 }
 
+.to-order .checkbox-area label {
+    cursor: pointer;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.to-order .checkbox-area input {
+    display: none;
+}
+
+.to-order .checkbox-area input~.check-icon {
+    margin-right: 18px;
+    width: 36px;
+    height: 36px;
+    background: url("img/unchecked.png");
+}
+
+.to-order .checkbox-area input:checked~.check-icon {
+    background: url("img/checked.png");
+}
+
+.to-order .checkbox-area a {
+    color: black;
+}
+
 .btn.submit {
-    padding: 15px 20px;
+    cursor: pointer;
+    padding: 16px 21px;
     color: white;
     font-size: 16px;
+    outline: none;
     background-color: #834700;
-    border-color: #834700;
+    border: none;
 }
 
 .footer {

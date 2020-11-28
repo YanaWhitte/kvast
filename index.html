@@ -246,19 +246,29 @@
                     <input type="text" name="email" id="email" />
                 </div>
                 <div class="order-form-group">
-                    <label for="quantity">Объём заказа:</label>
-                    <select name="quantity" id="quantity">
-                        <option value="1">От 5 до 10 баррелей в неделю</option>
-                    </select>
+                    <label class="select-label" for="quantity">Объём заказа:</label>
+                    <div class="select row">
+                        <input type="checkbox" name="quantity" id="quantity">
+                        <p class="placeholder">От 5 до 10 баррелей в неделю</p>
+                        <div class="check-icon"></div>
+                    </div>
                 </div>
                 <div class="order-form-group">
                     <label for="order-comment" class="for-textarea">Доп. комментарий:</label>
                     <textarea name="order-comment" id="order-comment"></textarea>
                 </div>
                 <div class="checkbox-area">
-                    <label>
-                        <input type="checkbox" checked name="subscription" /> Я
-                        согласен получать квасную рассылку
+                    <label class="row">
+                        <input type="checkbox" checked name="subscription" />
+                        <div class="check-icon"></div>
+                        <p>Я согласен получать квасную рассылку</p>
+                    </label>
+                </div>
+                <div class="checkbox-area">
+                    <label class="row">
+                        <input type="checkbox" name="subscription" />
+                        <div class="check-icon"></div>
+                        <p>Я согласен с <a href="#">пользовательским соглашением</a></p>
                     </label>
                 </div>
                 <input class="btn submit" type="submit" value="Отправить заказ" />
