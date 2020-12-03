@@ -3,7 +3,7 @@
 @media screen and (max-width: 480px) {
     body {
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 10px;
+        font-size: 12px;
         line-height: 22px;
     }
     .container {
@@ -43,7 +43,7 @@
         text-align: center;
     }
     .advantage .advantage-column {
-        padding: 50px 0;
+        padding: 90px 0 50px;
         border: none;
     }
     .advantage .advantage-column:last-child {
@@ -56,9 +56,39 @@
     .advantage-brew,
     .advantage-matreshka,
     .advantage-thumbsup {
-        background-position: top -35px center;
+        background-position: top 5px center;
     }
     .kvast-reference {
         padding: 80px 30px;
+    }
+    .kvast-reference .theory-container {
+        flex-direction: column;
+    }
+    .kvast-reference .column-2 {
+        margin-top: 21px;
+        margin-left: 0;
+    }
+    .reference-description {
+        width: 100%;
+    }
+    .reference-source {
+        margin-bottom: 15px;
+    }
+    .press-review {
+        padding: 80px 30px 90px;
+    }
+    .press-review p {
+        width: 100%;
+    }
+    .press-review .btn-cite {
+        align-items: center;
+        justify-content: space-between;
+    }
+    .btn.read-more {
+        padding: 11px 18px 12px;
+    }
+    .press-review cite {
+        margin-left: 0;
+        flex: 1;
     }
 }
