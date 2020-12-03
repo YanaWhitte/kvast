@@ -1,0 +1,64 @@
+/* On screens that are 600px or less, set the background color to olive */
+
+@media screen and (max-width: 480px) {
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        line-height: 22px;
+    }
+    .container {
+        width: inherit;
+    }
+    .logo-and-nav {
+        margin-top: 40px;
+        justify-content: space-between;
+    }
+    .main-nav a {
+        padding: 21px 27px 18px 27px;
+        color: white;
+        line-height: 18px;
+        text-decoration: none;
+        display: block;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .bottles .new-items {
+        display: flex;
+        flex-direction: column;
+    }
+    .bottles .item-column {
+        margin-bottom: 20px;
+        border: none;
+    }
+    .bottles .item-column:first-child {
+        padding-bottom: 35px;
+        border-bottom: 1px solid #e5e5e5;
+    }
+    .advantage {
+        padding-bottom: 40px;
+    }
+    .advantage .advantage-items {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .advantage .advantage-column {
+        padding: 50px 0;
+        border: none;
+    }
+    .advantage .advantage-column:last-child {
+        border: none;
+    }
+    .advantage .advantage-matreshka {
+        border-top: 1px solid #e5b66c;
+        border-bottom: 1px solid #e5b66c;
+    }
+    .advantage-brew,
+    .advantage-matreshka,
+    .advantage-thumbsup {
+        background-position: top -35px center;
+    }
+    .kvast-reference {
+        padding: 80px 30px;
+    }
+}
