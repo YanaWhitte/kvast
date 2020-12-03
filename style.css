@@ -97,12 +97,13 @@ body {
 }
 
 .bottles {
-    padding-bottom: 110px;
+    padding: 80px 0 110px;
 }
 
-.bottles h2 {
+
+/* .bottles h2 {
     margin-top: 80px;
-}
+} */
 
 .bottles h3 {
     margin-left: -1px;
@@ -144,7 +145,6 @@ body {
 }
 
 .table-block {
-    /* width: 150px; */
     height: 82px;
 }
 
@@ -180,7 +180,9 @@ p.item-description {
 }
 
 .btn {
-    display: block;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     padding: 15px 20px;
     text-decoration: none;
     text-transform: uppercase;
@@ -204,9 +206,6 @@ p.item-description {
 }
 
 .btn.purchase {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     padding: 15px 22px;
     margin-left: 6px;
     color: white;
@@ -558,6 +557,7 @@ p.item-description {
 .to-order textarea {
     display: block;
     min-height: 120px;
+    resize: vertical;
 }
 
 .to-order .checkbox-area {
@@ -578,11 +578,11 @@ p.item-description {
     margin-right: 18px;
     width: 36px;
     height: 36px;
-    background: url("img/unchecked.png");
+    background: url("img/unchecked.png") no-repeat center;
 }
 
 .to-order .checkbox-area input:checked~.check-icon {
-    background: url("img/checked.png");
+    background: url("img/checked.png") no-repeat center;
 }
 
 .to-order .checkbox-area a {
@@ -602,9 +602,12 @@ p.item-description {
 .footer {
     padding: 60px 43px;
     background-color: black;
+    display: flex;
+    justify-content: center;
 }
 
 .footer .logo-and-nav {
+    align-items: center;
     margin-top: -4px;
 }
 
@@ -628,11 +631,6 @@ p.item-description {
     font-size: 14px;
     line-height: 20px;
     color: #989898;
-}
-
-.footer-social,
-.footer-social a {
-    font-size: 0;
 }
 
 .social-btn {
@@ -684,12 +682,18 @@ p.item-description {
 .developer-and-logo {
     margin-right: 13px;
     padding-top: 3px;
-}
-
-.developer-and-logo b {
-    margin-left: 26px;
+    align-items: center;
 }
 
 .developer-and-logo .developer {
+    margin-left: 26px;
     font-weight: bold;
+}
+
+.developer-and-logo .developer a {
+    font-weight: normal;
+}
+
+.developer-and-logo .developer a:hover {
+    text-decoration: underline;
 }
