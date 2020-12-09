@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="adaptation.css" />
 </head>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
 <body>
     <header class="header flex-center">
         <div class="container">
@@ -55,7 +57,8 @@
                         </div>
                     </div>
                     <p class="item-descriprion">
-                        Терпкий и мощный, вкус этого кваса взбодрит после тяжёлого дня и придаст сил для вечерних приключений!
+                        Терпкий и мощный, вкус этого кваса взбодрит после тяжёлого дня и придаст сил для вечерних
+                        приключений!
                     </p>
                     <div class="item-buttons row">
                         <a href="#" class="btn more-details">Подробнее</a>
@@ -133,7 +136,9 @@
                 <div class="column">
                     <h3 class="reference-title">Происхождение кваса</h3>
                     <p class="reference-description">
-                        Квас на Руси появился в X-XI веке. Само слово «квас» тоже имеет древнерусское происхождение. Помимо России квас готовят в Белоруссии, Сербии, Македонии, Словакии и многих других странах, но называется он везде одинаково — квас.
+                        Квас на Руси появился в X-XI веке. Само слово «квас» тоже имеет древнерусское происхождение.
+                        Помимо России квас готовят в Белоруссии, Сербии, Македонии, Словакии и многих других странах, но
+                        называется он везде одинаково — квас.
                     </p>
                 </div>
                 <div class="column column-2">
@@ -147,7 +152,9 @@
                 <div class="column">
                     <h3 class="reference-title">Классификация кваса</h3>
                     <p class="reference-description">
-                        По российскому ГОСТу для промышленного изготовления — это напиток с объёмной долей этилового спирта не более 1,2%, изготовленный в результате незавершённого спиртового и молочнокислого брожения сусла.
+                        По российскому ГОСТу для промышленного изготовления — это напиток с объёмной долей этилового
+                        спирта не более 1,2%, изготовленный в результате незавершённого спиртового и молочнокислого
+                        брожения сусла.
                     </p>
                 </div>
                 <div class="column column-2">
@@ -168,7 +175,8 @@
                     <img src="img/quotes.png" alt="quotes" width="41" height="31" />
                 </div>
                 <p>
-                    Сегодня мы провели дегустацию чего-то действительно новенького — крафтового кваса. Да, да, вы не ослышались! Спасибо Арсену и Руслану за то, что предоставили целую бочку своего напитка!
+                    Сегодня мы провели дегустацию чего-то действительно новенького — крафтового кваса. Да, да, вы не
+                    ослышались! Спасибо Арсену и Руслану за то, что предоставили целую бочку своего напитка!
                 </p>
             </div>
             <div class="btn-cite row">
@@ -228,17 +236,18 @@
             <h2 class="section-title">Заказать</h2>
 
             <p class="order-tip">
-                Не ждите пока нас отрекламируют, как Вятский квас, и мы поднимем цены! Закажите настоящий крафтовый квас сейчас. При заказе от 10 баррелей — скидка 10%.
+                Не ждите пока нас отрекламируют, как Вятский квас, и мы поднимем цены! Закажите настоящий крафтовый квас
+                сейчас. При заказе от 10 баррелей — скидка 10%.
             </p>
             <form class="order-form" action="/keksby-mail" method="post">
                 <div class="order-form-group">
                     <label for="fullname">Представьтесь:</label>
-                    <input type="text" name="fullname" id="fullname" required />
+                    <input type="text" name="fullname" id="fullname" class="required" required />
                 </div>
                 <div class="row">
                     <div class="order-form-group phone-row">
                         <label for="phone">Номер телефона:</label>
-                        <input type="text" name="phone" id="phone" required />
+                        <input type="text" name="phone" id="phone" class="required" required />
                     </div>
                     <div class="order-form-group">
                         <label for="extra-phone">Доп. номер:</label>
@@ -247,7 +256,7 @@
                 </div>
                 <div class="order-form-group">
                     <label for="email">Email:</label>
-                    <input type="text" name="email" id="email" required />
+                    <input type="text" name="email" id="email" class="required" required />
                 </div>
                 <div class="order-form-group">
                     <label class="select-label" for="quantity">Объём заказа:</label>
@@ -271,11 +280,11 @@
                 <div class="checkbox-area">
                     <label class="row">
                         <input type="checkbox" name="subscription" required />
-                        <div class="check-icon"></div>
+                        <div class="check-icon required"></div>
                         <p>Я согласен с <a href="#">пользовательским соглашением</a></p>
                     </label>
                 </div>
-                <input class="btn submit" type="submit" value="Отправить заказ" />
+                <input class="btn submit" type="submit" id="button" value="Отправить заказ" />
             </form>
         </div>
     </section>
@@ -306,10 +315,12 @@
                 </div>
                 <div class="developer-and-logo row">
                     <a target="_blank" class="social-btn html" href="https://htmlacademy.ru">HTML Academy</a>
-                    <p class="developer">Разработчик: <a target="_blank" href="https://htmlacademy.ru">HTML Academy</a></p>
+                    <p class="developer">Разработчик: <a target="_blank" href="https://htmlacademy.ru">HTML Academy</a>
+                    </p>
                 </div>
             </div>
         </div>
     </footer>
-    <script src="js/main.js"></script>
+    <!-- <script src="js/main.js"></script> -->
+    <script src="js/form.js"></script>
 </body>
