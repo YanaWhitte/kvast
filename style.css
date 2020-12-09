@@ -592,6 +592,10 @@ p.item-description {
   border-bottom: 2px solid #ef0202;
 }
 
+.order-form div.empty_field {
+  border: 2px solid #ef0202;
+}
+
 .btn.submit {
   cursor: pointer;
   padding: 16px 21px;
