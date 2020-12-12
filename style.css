@@ -63,6 +63,7 @@ body {
   display: block;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
 }
 
 .main-nav a:first-child {
@@ -186,6 +187,7 @@ p.item-description {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
+  transition: all 0.3s ease;
 }
 
 .btn.more-details {
@@ -357,6 +359,7 @@ p.item-description {
   line-height: 20px;
   border: 2px solid black;
   opacity: 0.3;
+  transition: all 0.2s ease;
 }
 
 .btn.read-more:hover {
